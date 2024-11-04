@@ -15,3 +15,6 @@ window.onload = function() {
     let scrollPosition = window.pageYOffset;
     header.style.backgroundPositionY = scrollPosition * 0.5 + 'px'; // Adjust the multiplier to control the speed
 });
+
+
+
