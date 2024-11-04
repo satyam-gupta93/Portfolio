@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("Assets/logoback.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.contanier{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap:wrap ;
+    
+}
+.logo{
+    width: 180px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1); 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+
+nav ul li a:hover {
+    color: #ff004f; /* Change text color on hover */
+    border-radius: 5px;
+}
+.headtext{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.headtext h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+} 
+.headtext h1 span{
+    color: #ff004f;
+}
+#element{
+    color:white;
+}
+.headbtn{
+    margin-top: 40px;
+    height: 45px;
+    width: 160px;
+    background: linear-gradient(90deg, #ff004f, #d92d64);
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 15px rgba(217, 45, 100, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.headbtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(217, 45, 100, 0.8);
+}
+.headbtn a{
+    text-decoration: none;
+    color: white;
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    padding: 80px 10%
+}
+.abtrow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.abt1{
+    flex-basis: 35%;
+
+}
+/* .abt1 img{
+    width: 100%;
+    
+    border-radius: 15px;
+
+}  */
+.abt1 img {
+    width: 100%;
+    border-radius: 15px;
+    /* border: 5px solid rgba(255, 0, 79, 0.3); Light red border */
+    box-shadow: 0 8px 20px rgba(255, 0, 79, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.abt1 img:hover {
+    transform: scale(1.01); /* Slight zoom on hover */
+    box-shadow: 0 12px 30px rgba(255, 0, 79, 0.2); /* Stronger shadow on hover */
+    /* border: 5px solid rgba(255, 0, 79, 0.6); Darker red border on hover */
+}
+
+.abt2{
+    flex-basis: 60%;
+}
+.abthead{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.4);
+}
+
+/* .abttext{
+    margin-top: 20px;
+    color: white;
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    line-height: 30px;
+} */
+.abttext {
+    margin-top: 50px;
+    color: white;
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    background: linear-gradient(90deg, #ff004f, #d92d64);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.abttext:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 0, 79, 0.4);
+}
+
+#education {
+    padding: 80px 10%;
+    color: #ababab;
+}
+
+.educontainer {
+    text-align: center;
+}
+
+.eduhead {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.4);
+    margin-bottom: 80px;
+}
+
+.edurow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.eduitem {
+    flex-basis: 45%;
+    margin-bottom: 80px;
+    background: #101010;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 0, 79, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#lasteduitem{
+    margin-left: 27%;
+}
+
+.eduitem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 79, 0.2);
+}
+
+.edutitle {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #ff004f, #d92d64);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.edutext {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.8;
+    color: white;
+    text-align: justify;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+#skills {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #ababab;
+    
+   
+}
+
+.sklhead {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.4);
+    margin-bottom: 80px;
+}
+.skill-card{
+    height: 300px;
+    width: 240px;
+    text-align: center;
+    
+}
+.skillpara{
+    font-size: 20px;
+    font-weight: bold;
+}
+.swiper-container {
+    overflow: hidden;
+    margin-left: 90px;
+    margin-top: 100px;
+}#projects {
+    padding: 80px 10%;
+    color: #ababab;
+    margin-top: 40px;
+}
+
+.projhead {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.4);
+    margin-bottom: 80px;
+}
+
+.projcontanier {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between;
+    gap: 30px; /* Space between the project cards */
+    max-width: 1200px; /* Adjust max-width to control the wrapping */
+    margin: 0 auto; /* Center the container */
+}
+
+.projlist {
+    width: calc(33.333% - 20px); /* Adjusts to fit 3 items per row with gaps */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width calculation */
+}
+
+.projlist div {
+    background: #262626;
+    padding: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    height: 380px;
+    box-shadow: 0 8px 20px rgba(255, 0, 79, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projlist div i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ff004f;
+}
+
+.projlist div h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.projlist div p {
+    margin-bottom: 20px;
+    color: #ababab;
+}
+
+.projlist div a {
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ff004f;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.projlist div a:hover {
+    background-color: #ff004f;
+    color: #ffffff;
+}
+
+.projlist div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 79, 0.2);
+}
+.projtext{
+    font-size: 14px;
+    color: white;
+    opacity: 1;
+    font-weight: 300;
+}
+#contact{
+    padding: 80px 10%;
+    
+    
+}
+
+.conthead{
+   
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 79, 0.4);
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 60px;
+}
+.controw{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}  
+.contleft{
+    flex-basis: 35%;
+}
+.contrigth{
+    flex-basis: 60%;
+}
+
+
+.contleft {
+    color: #ffffff;
+}
+
+.contleft p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #dcdcdc;
+}
+
+.contactinfo p {
+    font-size: 1.1em;
+    margin-bottom: 28px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contactinfo i {
+    margin-right: 10px;
+    
+}
+.contactinfo p i{
+    color: #ff004f;
+    font-size: 25px;
+
+}
+
+.contactinfo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contactinfo a:hover {
+    color: #00b4d8;
+    transition: color 0.3s ease;
+}
+
+.socialicon {
+    margin-top: 40px;
+    
+}
+
+.socialicon a i{
+    color: #ffffff;
+    font-size: 30px;
+    margin-right: 28px;
+    transition: color 0.3s ease, transform 0.5s ;
+}
+
+.socialicon i:hover {
+    color: #ff004f;
+    
+    transform: translateY(-5px);
+}
+
+/* Optional: Adding a subtle background gradient */
+.contleft{
+    
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contrigth{
+    flex-basis: 60%;
+   
+}
+.contrigth form{
+    width:600px
+    
+} 
+form input, form textarea{
+    width: 100%;
+     border: 0; 
+     outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 20px 0; 
+    color: white;
+    font-size: 14px;
+   border-radius: 6px;   
+   box-shadow: 0 8px 20px rgba(255, 0, 79, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}  
+form textarea:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 79, 0.14);
+}
+form input:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 79, 0.14);
+}
+
+
+.formbtn{
+    /* padding: 14px 30px; */
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.contact-form{
+    margin-top: 18px;
+}
+#copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+} 
+nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url("Assets/phone-background.png");
+    }
+    .headtext{
+        margin-top:380px;
+        font-size: 16px;
+    }
+    .headtext h1{
+        font-size: 28px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        margin-left: 120px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .abtrow, .edurow, .projcontanier {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abt1, .abt2, .eduitem, .projlist {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .projlist {
+        width: 100%; /* Adjusts to fit 1 item per row */
+        margin-bottom: 20px; /* Adds space between items */
+    }
+
+    .projcontanier {
+        gap: 20px; /* Reduces the gap between items */
+    }
+
+    .projlist div {
+        height: auto; /* Allows the height to adjust based on content */
+        padding: 20px;
+    }
+
+    .projlist div h2 {
+        font-size: 22px;
+    }
+
+    .projlist div p {
+        font-size: 14px;
+    }
+    #lasteduitem{
+        margin-left:0 ;
+    }
+    .skills-container {
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 0;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .skill-card {
+        width: 100%; /* Show one card at a time */
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        animation: slide 15s infinite ease-in-out;
+    }
+
+    
+
+}
+
+#msg{
+    color: #61b752;
+    margin-top: 20px;
+    display: block;
+    margin-left: 5px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:  #9c2148;
+    border-radius: 6px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #581228;
+
+  }
+  
