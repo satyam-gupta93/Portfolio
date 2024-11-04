@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Journey Through My Code - Portfolio</title>
+    <link rel="stylesheet" href="aniistyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="contanier">
+            <nav>
+                <img src="Assets/Satlogo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headtext">
+                <h1 >Hi, I'm <span> Satyam Gupta</span> </h1>
+                <p class="headtext2">
+                    Aspiring <span id="element"></span>
+                </p>
+                
+                <button class="headbtn" >
+                    <a href="Assets/Satyam Gupta Resume.pdf" download class="headbtnanch">Download CV</a>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="abtcontainer">
+            <div class="abtrow">
+                <div class="abt1">
+                    <img src="Assets/user.png" alt="">
+                </div>
+                <div class="abt2">
+                    <h1 class="abthead">About Me</h1>
+                    <p class="abttext" >
+                        Hello! I'm Satyam Gupta, a second-year ECE(IOT) student at IIIT Nagpur with a focus on IoT. My journey into full stack development stems from a passion for creating dynamic and visually compelling web applications. From leading a team in the 'AI Georoer' project to building interactive web servers, I thrive on challenges that push my coding skills and creativity.Beyond coding, I enjoy playing kabaddi, a sport that enhances my strategic thinking and teamwork. I'm constantly seeking new opportunities to grow as a developer and am excited about what the future holds in the tech world.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="education">
+        <div class="educontainer">
+            <h1 class="eduhead">Education</h1>
+            <div class="edurow">
+                <div class="eduitem">
+                    <h2 class="edutitle">B.Tech-ECE(IOT)</h2>
+                    <p class="edutext">Indian Institute of Information Technology, Nagpur <br> Present</p>
+                </div>
+                <div class="eduitem">
+                    <h2 class="edutitle">XII (CBSE)</h2>
+                    <p class="edutext">Venus Public School, Gwalior <br> Percentage: 90.2% | 2022</p>
+                </div>
+                <div class="eduitem" id="lasteduitem">
+                    <h2 class="edutitle">X (CBSE)</h2>
+                    <p class="edutext">Oxford Public School, Gwalior <br> Percentage: 78.6% | 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="skills">
+        <div class="skillscontainer">
+            <h1 class="sklhead">Skills</h1>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <img src="Assets/html5-plain.svg" alt="HTML">
+                            <p class="skillpara">HTML</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <img src="Assets/css3-plain.svg" alt="CSS">
+                            <p class="skillpara">CSS</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <img src="Assets/javascript-plain.svg" alt="JavaScript">
+                            <p class="skillpara">JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <img src="Assets/c-plain.svg" alt="React">
+                            <p class="skillpara">C</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <img src="Assets/nodejs-line-wordmark.svg" alt="Node.js">
+                            <p class="skillpara">Node.js</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="skill-card">
+                            <img src="Assets/c-plain.svg" alt="React">
+                            <p class="skillpara">C++</p>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <div id="projects">
+        <h1 class="projhead">Projects</h1>
+        <div class="projcontanier">
+            
+            <div class="projlist">
+                <div >
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>GeoRover</h2>
+                    <p class="projtext">
+                        Inspired by mining operations, we aim to develop a rover for Earth-based environmental monitoring. By integrating advanced sensors and AI, this versatile platform will collect essential data in challenging environments.</p>
+                    <a href="c:\Users\HP\Downloads\GEOROVER.pdf">See</a>
+                </div>
+            </div>
+            <div class="projlist">
+                <div>
+                    <i class="fa-brands fa-spotify"></i>
+                    <h2>Spotify-clone</h2>
+                    <p class="projtext">
+                        I built the front end of a Spotify clone, focusing on its clean and intuitive user interface. It allows users to browse and search for music, closely replicating the original platform's design for a seamless and engaging experience.</p>
+                    <a href="c:\Users\HP\Desktop\Webdevelpoment\css\Day13_Spotify\index.html">See</a>
+                </div>
+            </div>
+            <div class="projlist">
+                <div>
+                    <i class="fa-solid fa-car"></i>
+                    <h2>Obstacle Alert Robot Car</h2>
+                    <p class="projtext">I created an obstacle alert robotic car that uses sensors to detect and avoid obstacles in its path. The design is focused on real-time responsiveness, ensuring the car navigates smoothly around obstacles for enhanced safety and efficiency.</p>
+                    <a href="c:\Users\HP\Downloads\VID-20231208-WA0009.mp4">See</a>
+                </div>
+            </div>
+            <div class="projlist">
+                <div>
+                    <i class="fa-brands fa-amazon"></i>
+                    <h2>Amazon-Clone</h2>
+                    <p class="projtext">
+                        I built the front end of an Amazon clone, replicating its user interface for product browsing, searching, and detailed product views.</p>
+                    <a href="c:\Users\HP\Desktop\Webdevelpoment\Amazon\index.html">See</a>
+                </div>
+            </div>
+            <div class="projlist">
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Simon-Says Game</h2>
+                    <p class="projtext">I created a Simon Says game, featuring a colorful interface and interactive gameplay. The game tests memory and reaction skills by requiring players to repeat increasingly complex sequences of colors.</p>
+                    <a href="c:\Users\HP\Desktop\Webdevelpoment\JavaScript\Projects\Simons Game\simon.html">See</a>
+                </div>
+            </div>
+            <div class="projlist">
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Snapshot</h2>
+                    <p class="projtext">
+                        I developed the front end of a photographer’s website, featuring a clean and elegant design to showcase their portfolio.</p>
+                    <a href="c:\Users\HP\Desktop\Webdevelpoment\css\Day11_miniproject\index.html">See</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="controw">
+                <div class="contleft">
+                    <h1 class="conthead">Contact Me</h1>
+                    <p>Feel free to reach out to me through any of the following methods.</p>
+                    <div class="contactinfo">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:youremail@example.com">satyamgupta9302@gamil.com</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">+91 9302596940</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Gwalior, Madhya Pradesh, India</p>
+                        <div class="socialicon">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="contright">
+                    <form class="contact-form" name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="headbtn formbtn">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="copyright">
+        <p>&copy; 2024 Satyam Gupta. All rights reserved.</p>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Developer'],
+            typeSpeed: 150,
+
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 3, /* Number of slides visible at once */
+            spaceBetween: 30,
+            loop: true,
+            centeredSlides: true, /* Center the active slide */
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbynjRICnVGmm7WwhN8H6-6fzdCQLX1BHZTe-5_LWG8N5WaE2v9m3AF4pMN9ikIyWRwYag/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML ="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <script src="app.js"></script>
+</body>
+</html>
